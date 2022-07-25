@@ -9,7 +9,7 @@ public class Banco {
 	
 	private static List<Empresa> listaEmpresas = new ArrayList<>();
 	private static List<Usuario> listaUsuarios = new ArrayList<>();
-	private static int chaveSquencial;
+	private static int chaveSquencial = 1;
 	
 	static {
 		Empresa e = new Empresa();
@@ -72,7 +72,7 @@ public class Banco {
 			  .findFirst()
 			  .get();
 		} catch (NoSuchElementException e) {
-			System.out.println("UsuárioNãoEncontrado!");
+			System.out.println("Usuï¿½rioNï¿½oEncontrado!");
 		}
 		return usuario; 
 								  
